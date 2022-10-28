@@ -1,3 +1,11 @@
+/*
+
+Site Name: Resident Evil Fansite
+Author: David Kirby
+Version: 1.0
+
+*/
+
 @import "reset";
 
 $border: 2px solid black;
@@ -31,8 +39,6 @@ $color: goldenrod;
 
     display: flex;
     align-items: center;
-
-    background-image: url("images/RE1hd copy 2.jpeg");
 
     h1 {
         color: $color;
