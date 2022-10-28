@@ -1,0 +1,96 @@
+@import "reset";
+
+$border: 2px solid black;
+$color: goldenrod;
+
+@mixin list {
+    list-style-type: none;
+    
+    li {
+        text-transform: capitalize;
+    }
+}
+
+@mixin text {
+    text-transform: capitalize;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    @include text;
+
+    font-family: 'Jacques Francois Shadow' ,sans-serif;
+
+    padding: 20px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    background-image: url("images/RE1hd copy 2.jpeg");
+
+    h1 {
+        color: $color;
+        margin-left: 550px;
+        font-size: 70px;
+    }
+}
+
+.nav {
+    @include list;
+    @include text;
+    padding: 10px;
+    background-color: $color;
+
+    li {
+        display: inline;
+
+        a {
+            text-decoration: none;
+            font-size: 20px;
+            padding: 10px;
+            color: black;
+        }
+
+        a:hover {
+            background-color: black;
+            color: $color;
+        }
+    }
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+
+    background-image: url("images/RE1hd copy.jpeg");
+    background-size: cover;
+}
+
+.content {
+    @extend .main;
+    background-image: none;
+    background-color: rgba(black, 50%);
+    color: white;
+    overflow: auto;
+}
+
+h2 {
+    @include text;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.footer {
+    
+    @include text;
+    font-size: 15px;
+    padding: 15px;
+    background-image: none;
+    background-color: $color;
+}
