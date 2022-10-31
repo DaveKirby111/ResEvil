@@ -19,15 +19,11 @@
 
     while( $games->have_posts() ) : $games->the_post();
     if ( has_post_thumbnail() ) {
-        $large_image_url = wp_get_attachment_src( get_post_thumbnail_id(), 'large');
+        $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large');
         echo '';
         the_post_thumbnail('thumbnail');
         echo '';
     }
-
-    echo '<p class="title">';
-    echo get_the_title();
-    echo '</p>';
 
     endwhile;
 

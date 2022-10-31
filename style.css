@@ -30,10 +30,13 @@ time, mark, audio, video {
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+
 .header {
   text-transform: capitalize;
   text-align: center;
-  font-family: "Courier New", Courier, monospace;
   font-family: "Jacques Francois Shadow", sans-serif;
   padding: 20px;
   width: 100%;
@@ -43,14 +46,13 @@ time, mark, audio, video {
 .header h1 {
   color: goldenrod;
   margin-left: 550px;
-  font-size: 70px;
+  font-size: 50px;
 }
 
 .nav {
   list-style-type: none;
   text-transform: capitalize;
   text-align: center;
-  font-family: "Courier New", Courier, monospace;
   padding: 10px;
   background-color: goldenrod;
 }
@@ -68,7 +70,7 @@ time, mark, audio, video {
 }
 .nav li a:hover {
   background-color: black;
-  color: goldenrod;
+  color: white;
 }
 
 .main, .content {
@@ -82,23 +84,54 @@ time, mark, audio, video {
   background-image: none;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
+  padding: 30px;
   overflow: auto;
+}
+
+img.attachment-thumbnail {
+  width: 400px;
+  height: 300px;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.jill {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h2 {
   text-transform: capitalize;
   text-align: center;
-  font-family: "Courier New", Courier, monospace;
   margin-top: 20px;
+  margin-bottom: 20px;
   font-size: 30px;
+}
+
+h3 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-family: "Courier New", Courier, monospace;
+  margin-bottom: 20px;
+}
+
+strong {
+  color: rgb(15, 156, 15);
 }
 
 .footer {
   text-transform: capitalize;
   text-align: center;
-  font-family: "Courier New", Courier, monospace;
   font-size: 15px;
   padding: 15px;
   background-image: none;
   background-color: goldenrod;
+}
+.footer p {
+  margin-bottom: 0;
 }/*# sourceMappingURL=style.css.map */

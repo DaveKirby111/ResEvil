@@ -10,6 +10,7 @@ Version: 1.0
 
 $border: 2px solid black;
 $color: goldenrod;
+$font: 'Courier New', Courier, monospace;
 
 @mixin list {
     list-style-type: none;
@@ -22,11 +23,14 @@ $color: goldenrod;
 @mixin text {
     text-transform: capitalize;
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
 }
 
 * {
     box-sizing: border-box;
+}
+
+body {
+    font-family: $font;
 }
 
 .header {
@@ -43,7 +47,7 @@ $color: goldenrod;
     h1 {
         color: $color;
         margin-left: 550px;
-        font-size: 70px;
+        font-size: 50px;
     }
 }
 
@@ -65,7 +69,7 @@ $color: goldenrod;
 
         a:hover {
             background-color: black;
-            color: $color;
+            color: white;
         }
     }
 }
@@ -83,13 +87,45 @@ $color: goldenrod;
     background-image: none;
     background-color: rgba(black, 50%);
     color: white;
+    padding: 30px;
+
     overflow: auto;
+}
+
+img.attachment-thumbnail {
+    width: 400px;
+    height: 300px;
+
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.jill {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h2 {
     @include text;
     margin-top: 20px;
+    margin-bottom: 20px;
     font-size: 30px;
+}
+
+h3 {
+    font-family: $font;                      
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+p {
+   font-family: $font; 
+   margin-bottom: 20px;
+}
+
+strong {
+    color: rgb(15, 156, 15);
 }
 
 .footer {
@@ -99,4 +135,8 @@ h2 {
     padding: 15px;
     background-image: none;
     background-color: $color;
+
+    p {
+        margin-bottom: 0;
+    }
 }
