@@ -74,7 +74,7 @@ body {
 }
 
 .main, .content {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-image: url("images/RE1hd copy.jpeg");
   background-size: cover;
@@ -85,7 +85,6 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   padding: 30px;
-  overflow: auto;
 }
 
 img.attachment-thumbnail {
@@ -93,6 +92,11 @@ img.attachment-thumbnail {
   height: 300px;
   margin-left: 50px;
   margin-top: 50px;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 10px;
 }
 
 .jill {
@@ -104,7 +108,7 @@ img.attachment-thumbnail {
 h2 {
   text-transform: capitalize;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 50px;
   margin-bottom: 20px;
   font-size: 30px;
 }
