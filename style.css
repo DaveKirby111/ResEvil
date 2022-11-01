@@ -87,6 +87,29 @@ figcaption {
   margin-right: auto;
 }
 
+.re {
+  width: 900px;
+  height: 900px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+
+  display: flex;
+}
+
+.re6 {
+  width: 1500px;
+  height: 1500px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+
+  display: flex;
+}
+
+
 h2 {
   text-transform: capitalize;
   text-align: center;
