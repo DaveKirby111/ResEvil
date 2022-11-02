@@ -6,7 +6,7 @@ add_theme_support('custom-background');
 add_theme_support('post-thumbnails');
 
 function RE_styles() {
-    wp_enqueue_style('theme-style', get_template_directory_uri() . "/style.css", array(), '1.2');
+    wp_enqueue_style('theme-style', get_template_directory_uri() . "/style.css", array(), '1.3');
 }
 
 add_action('wp_enqueue_scripts', 'RE_styles');

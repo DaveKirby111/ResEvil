@@ -35,7 +35,7 @@ body {
   list-style-type: none;
   text-transform: capitalize;
   text-align: center;
-  padding: 10px;
+  padding: 20px;
   background-color: goldenrod;
 }
 .nav li {
@@ -47,7 +47,7 @@ body {
 .nav li a {
   text-decoration: none;
   font-size: 20px;
-  padding: 10px;
+  padding: 20px;
   color: black;
 }
 .nav li a:hover {
@@ -98,15 +98,23 @@ figcaption {
   display: flex;
 }
 
+.re3 {
+  margin-top: 30px;
+}
+
 .re6 {
   width: 1500px;
-  height: 1500px;
+  height: 300px;
 
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
 
   display: flex;
+}
+
+.re {
+  height: 300px;
 }
 
 
@@ -133,6 +141,24 @@ strong {
   color: rgb(15, 156, 15);
 }
 
+ .page-id-5 #menu-main {
+  display: none;
+}
+
+.wp-image-178 {
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
+.wp-block-button {
+  margin-bottom: 50px;
+
+}
+
+.wp-block-button:hover {
+  background-color: darkgray;
+}
+
 .footer {
   text-transform: capitalize;
   text-align: center;
@@ -143,4 +169,16 @@ strong {
 }
 .footer p {
   margin-bottom: 0;
-}/*# sourceMappingURL=style.css.map */
+}
+
+@media only screen and (max-width: 620px){
+  nav, .content, aside, .main {
+       width: 100%;
+       height: auto;
+       position: relative;
+       margin: 0;
+       
+   }
+}
+
+/*# sourceMappingURL=style.css.map */
