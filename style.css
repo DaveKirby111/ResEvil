@@ -117,6 +117,10 @@ figcaption {
   height: 300px;
 }
 
+ol {
+  margin: 20px;
+}
+
 
 h2 {
   text-transform: capitalize;
